@@ -1,0 +1,105 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: sans-serif
+body
+  background: linear-gradient(to right, #4daf54, #3d8880)
+  color: white
+  overflow: hidden
+
+ul
+  list-style: none
+button
+  outline: none
+  border: none
+  padding: 10px 20px
+  border-radius: 0.5rem
+  background-color: #4daf54
+  color: white
+  cursor: pointer
+  font-weight: bold
+
+img
+  width: 100%
+  object-fit: cover
+  padding-right: 30px
+  transition: all 0.3s ease-in-out
+
+section
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+span
+  font-size: 20px
+  font-weight: bold
+ul
+  display: flex
+  color: black
+  li
+    background-color: white
+    border-radius: 0.3rem
+    margin-inline: 5px
+    padding: 5px 10px
+    cursor: pointer
+
+.card
+  background-color: #272d40
+  width: 380px
+  height: 500px
+  padding: 20px
+  border-radius: 1rem
+  position: relative
+  h2
+    color: #4daf54
+    margin-bottom: 10px
+    text-align: center
+    transition: all 0.5s ease-in-out
+  p
+    font-weight: 600
+    font-size: 26px
+    text-align: center
+    margin-bottom: 30px
+    transition: all 0.5s ease-in-out
+  .hide
+    width: 100%
+    position: absolute
+    top: 100%
+    left: 0
+    padding: 20px
+    visibility: hidden
+    transition: all 0.5s ease-in-out
+    opacity: 0
+    .size, .color
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      span
+        margin-right: 20px
+    .buttons
+      display: flex
+      justify-content: space-between
+
+.card:hover
+  img
+    transform: rotateZ(-20deg) translateY(-20%)
+  h2
+    transform: translate(-70px, -15px)
+  p
+    transform: translate(-145px, -15px)
+  .hide
+    visibility: visible
+    opacity: 1
+    transform: translateY(-110%)
+#red
+  background-color: red
+#blue
+  background-color: blue
+#green
+  background-color: green
+#red, #blue, #green
+  height: 20px
+  width: 20px
+  border-radius: 10rem
